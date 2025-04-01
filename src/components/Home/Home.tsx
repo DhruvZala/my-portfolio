@@ -38,9 +38,9 @@ const Home = ({ setActiveTab }: HomeProps) => {
               whileHover={{ scale: 1.05 }}
               className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-blue-400 overflow-hidden mx-auto shadow-lg"
             >
-              {/* Replace with your actual image */}
+              {/* Image Section */}
               <div className="w-full h-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                <img src="public\20250115_114603.jpg" alt="Dhruv Zala" className="object-cover" />
+                <img src="20250115_114603.jpg" alt="Dhruv Zala" className="object-cover" />
               </div>
             </motion.div>
           </div>
