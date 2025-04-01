@@ -4,7 +4,6 @@ import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
-import Contact from "./components/Contact/Contact";
 import "./App.css";
 import "./index.css";
 
@@ -20,8 +19,6 @@ const App = () => {
         return <Skills />;
       case "projects":
         return <Projects />;
-      case "contact":
-        return <Contact />;
       default:
         return <Home setActiveTab={setActiveTab} />;
     }

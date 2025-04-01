@@ -23,7 +23,7 @@ const Footer = () => {
           >
             <FaInstagram className="h-6 w-6" />
           </a>
-          <a href="#" className="text-gray-400 hover:text-white">
+          <a href="mailto:zaladhruv673@gmail.com" className="text-gray-400 hover:text-white">
             <FaEnvelope className="h-6 w-6" />
           </a>
         </div>

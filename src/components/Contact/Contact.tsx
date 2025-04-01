@@ -78,7 +78,7 @@ const Contact = () => {
               >
                 <FaInstagram className="text-2xl" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition">
+              <a href="mailto:zaladhruv673@gmail.com" className="text-gray-300 hover:text-white transition">
                 <FaEnvelope className="text-2xl" />
               </a>
             </div>

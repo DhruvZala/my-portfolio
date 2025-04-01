@@ -25,7 +25,7 @@ const Home = ({ setActiveTab }: HomeProps) => {
           animate={{ y: 0 }}
           className="text-xl md:text-2xl text-gray-300 mb-8"
         >
-          Frontend Developer
+          Fullstack Developer
         </motion.p>
         <motion.div
           initial={{ scale: 0 }}

@@ -1,4 +1,4 @@
-import { FaCode } from "react-icons/fa";
+// import { FaCode } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 interface HeaderProps {
@@ -18,8 +18,8 @@ const Header = ({ activeTab, setActiveTab, menuOpen, setMenuOpen }: HeaderProps)
             animate={{ x: 0 }}
             className="flex items-center"
           >
-            <FaCode className="text-blue-400 text-2xl mr-2" />
-            <span className="text-xl font-bold">Dhruv Zala</span>
+            {/* <FaCode className="text-blue-400 text-2xl mr-2" /> */}
+            {/* <span className="text-xl font-bold">Dhruv Zala</span> */}
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -54,7 +54,7 @@ const Header = ({ activeTab, setActiveTab, menuOpen, setMenuOpen }: HeaderProps)
             >
               Projects
             </button>
-            <button
+            {/* <button
               onClick={() => setActiveTab("contact")}
               className={`px-3 py-2 rounded-md text-sm font-medium ${
                 activeTab === "contact"
@@ -63,7 +63,7 @@ const Header = ({ activeTab, setActiveTab, menuOpen, setMenuOpen }: HeaderProps)
               }`}
             >
               Contact
-            </button>
+            </button> */}
           </nav>
 
           {/* Mobile menu button */}
@@ -146,7 +146,7 @@ const Header = ({ activeTab, setActiveTab, menuOpen, setMenuOpen }: HeaderProps)
             >
               Projects
             </button>
-            <button
+            {/* <button
               onClick={() => {
                 setActiveTab("contact");
                 setMenuOpen(false);
@@ -158,7 +158,7 @@ const Header = ({ activeTab, setActiveTab, menuOpen, setMenuOpen }: HeaderProps)
               }`}
             >
               Contact
-            </button>
+            </button> */}
           </div>
         </motion.div>
       )}
