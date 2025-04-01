@@ -115,7 +115,7 @@ const Home = ({ setActiveTab }: HomeProps) => {
           </p>
 
           <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
-            {["React", "TypeScript", "Javascript", "Redux"].map((tech, index) => (
+            {["Javascript", "TypeScript", "React", "Redux"].map((tech, index) => (
               <motion.div
                 key={tech}
                 initial={{ opacity: 0, y: 20 }}

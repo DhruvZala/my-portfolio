@@ -14,7 +14,7 @@ const Header = ({
   setMenuOpen,
 }: HeaderProps) => {
   return (
-    <header className="bg-gray-800 shadow-md sticky top-0 z-10">
+    <header className="bg-gray-800 shadow-md sticky top-0 z-50 backdrop-blur-sm bg-opacity-90 border-b border-gray-700">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <motion.div
@@ -27,51 +27,41 @@ const Header = ({
           <nav className="hidden md:flex space-x-8">
             <button
               onClick={() => setActiveTab("home")}
-              className={`px-3 py-2 rounded-md text-sm font-medium cursor-pointer ${
+              className={`px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition-colors ${
                 activeTab === "home"
                   ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:text-white"
+                  : "text-gray-300 hover:text-white hover:bg-gray-700"
               }`}
             >
               Home
             </button>
             <button
               onClick={() => setActiveTab("skills")}
-              className={`px-3 py-2 rounded-md text-sm font-medium cursor-pointer ${
+              className={`px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition-colors ${
                 activeTab === "skills"
                   ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:text-white"
+                  : "text-gray-300 hover:text-white hover:bg-gray-700"
               }`}
             >
               Skills
             </button>
             <button
               onClick={() => setActiveTab("projects")}
-              className={`px-3 py-2 rounded-md text-sm font-medium cursor-pointer ${
+              className={`px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition-colors ${
                 activeTab === "projects"
                   ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:text-white"
+                  : "text-gray-300 hover:text-white hover:bg-gray-700"
               }`}
             >
               Projects
             </button>
-            {/* <button
-              onClick={() => setActiveTab("contact")}
-              className={`px-3 py-2 rounded-md text-sm font-medium ${
-                activeTab === "contact"
-                  ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:text-white"
-              }`}
-            >
-              Contact
-            </button> */}
           </nav>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="text-gray-300 hover:text-white focus:outline-none"
+              className="text-gray-300 hover:text-white focus:outline-none p-2 rounded-md hover:bg-gray-700 transition-colors"
             >
               <svg
                 className="h-6 w-6"
@@ -105,7 +95,9 @@ const Header = ({
         <motion.div
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
-          className="md:hidden"
+          exit={{ opacity: 0, height: 0 }}
+          transition={{ duration: 0.3 }}
+          className="md:hidden bg-gray-800 bg-opacity-95 backdrop-blur-sm"
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <button
@@ -113,10 +105,10 @@ const Header = ({
                 setActiveTab("home");
                 setMenuOpen(false);
               }}
-              className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
+              className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors ${
                 activeTab === "home"
                   ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:text-white"
+                  : "text-gray-300 hover:text-white hover:bg-gray-700"
               }`}
             >
               Home
@@ -126,10 +118,10 @@ const Header = ({
                 setActiveTab("skills");
                 setMenuOpen(false);
               }}
-              className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
+              className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors ${
                 activeTab === "skills"
                   ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:text-white"
+                  : "text-gray-300 hover:text-white hover:bg-gray-700"
               }`}
             >
               Skills
@@ -139,27 +131,14 @@ const Header = ({
                 setActiveTab("projects");
                 setMenuOpen(false);
               }}
-              className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
+              className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors ${
                 activeTab === "projects"
                   ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:text-white"
+                  : "text-gray-300 hover:text-white hover:bg-gray-700"
               }`}
             >
               Projects
             </button>
-            {/* <button
-              onClick={() => {
-                setActiveTab("contact");
-                setMenuOpen(false);
-              }}
-              className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                activeTab === "contact"
-                  ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:text-white"
-              }`}
-            >
-              Contact
-            </button> */}
           </div>
         </motion.div>
       )}
