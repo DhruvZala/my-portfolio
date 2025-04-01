@@ -52,7 +52,7 @@ const skillsData: Skill[] = [
   { name: "SCSS", icon: BsFiletypeScss, className: "text-teal-500", level: 70 },
 ];
 
-const SkillCard = ({ skill, index }: { skill: Skill; index: number }) => {
+const SkillCard = ({ skill }: { skill: Skill; index: number }) => {
   const Icon = skill.icon;
 
   return (
@@ -60,8 +60,8 @@ const SkillCard = ({ skill, index }: { skill: Skill; index: number }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       whileHover={{ scale: 1.05 }}
-      transition={{ delay: index * 0.1, type: "spring" }}
-      className="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-lg hover:shadow-xl transition-shadow"
+      transition={{ type: "spring" }}
+      className="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-lg cursor-pointer"
     >
       <Icon
         className={`text-4xl mb-3 ${skill.className}`}
@@ -92,7 +92,9 @@ const Skills = () => {
       className="py-12"
     >
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-white mb-8">My Skills</h2>
+        <h2 className="text-3xl font-bold text-white mb-8 cursor-pointer">
+          My Skills
+        </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {skillsData.map((skill, index) => (
             <SkillCard key={skill.name} skill={skill} index={index} />

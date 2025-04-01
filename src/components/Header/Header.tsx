@@ -1,4 +1,3 @@
-// import { FaCode } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 interface HeaderProps {
@@ -8,7 +7,12 @@ interface HeaderProps {
   setMenuOpen: (open: boolean) => void;
 }
 
-const Header = ({ activeTab, setActiveTab, menuOpen, setMenuOpen }: HeaderProps) => {
+const Header = ({
+  activeTab,
+  setActiveTab,
+  menuOpen,
+  setMenuOpen,
+}: HeaderProps) => {
   return (
     <header className="bg-gray-800 shadow-md sticky top-0 z-10">
       <div className="max-w-6xl mx-auto px-4">
@@ -17,16 +21,13 @@ const Header = ({ activeTab, setActiveTab, menuOpen, setMenuOpen }: HeaderProps)
             initial={{ x: -50 }}
             animate={{ x: 0 }}
             className="flex items-center"
-          >
-            {/* <FaCode className="text-blue-400 text-2xl mr-2" /> */}
-            {/* <span className="text-xl font-bold">Dhruv Zala</span> */}
-          </motion.div>
+          ></motion.div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             <button
               onClick={() => setActiveTab("home")}
-              className={`px-3 py-2 rounded-md text-sm font-medium ${
+              className={`px-3 py-2 rounded-md text-sm font-medium cursor-pointer ${
                 activeTab === "home"
                   ? "bg-gray-900 text-white"
                   : "text-gray-300 hover:text-white"
@@ -36,7 +37,7 @@ const Header = ({ activeTab, setActiveTab, menuOpen, setMenuOpen }: HeaderProps)
             </button>
             <button
               onClick={() => setActiveTab("skills")}
-              className={`px-3 py-2 rounded-md text-sm font-medium ${
+              className={`px-3 py-2 rounded-md text-sm font-medium cursor-pointer ${
                 activeTab === "skills"
                   ? "bg-gray-900 text-white"
                   : "text-gray-300 hover:text-white"
@@ -46,7 +47,7 @@ const Header = ({ activeTab, setActiveTab, menuOpen, setMenuOpen }: HeaderProps)
             </button>
             <button
               onClick={() => setActiveTab("projects")}
-              className={`px-3 py-2 rounded-md text-sm font-medium ${
+              className={`px-3 py-2 rounded-md text-sm font-medium cursor-pointer ${
                 activeTab === "projects"
                   ? "bg-gray-900 text-white"
                   : "text-gray-300 hover:text-white"
