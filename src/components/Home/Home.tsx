@@ -53,7 +53,7 @@ const Home = ({ setActiveTab }: HomeProps) => {
         <h2 className="text-2xl font-semibold text-white mb-6">About Me</h2>
         <div className="bg-gray-800 rounded-xl p-6 shadow-lg">
           <p className="text-gray-300 mb-4">
-            I'm a passionate frontend developer with expertise in building
+            I'm a passionate fullstack developer with expertise in building
             modern, responsive web applications using React, TypeScript, and
             other cutting-edge technologies.
           </p>
