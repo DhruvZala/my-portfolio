@@ -119,7 +119,7 @@ const Projects = () => {
       description:
         "A responsive admin dashboard built with React and TypeScript",
       tags: ["React", "TypeScript", "Tailwind"],
-      link: "https://dhruvproject.netlify.app/",
+      link: "https://cartify-rho-six.vercel.app/",
       image: "Screenshot 2025-03-31 130817.png",
     },
     {
