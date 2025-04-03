@@ -40,7 +40,7 @@ const Home = ({ setActiveTab }: HomeProps) => {
             >
               {/* Image Section */}
               <div className="w-full h-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                <img src="20250115_114603.jpg" alt="Dhruv Zala" className="object-cover" />
+                <img src="IMG_20231114_115455.jpg" alt="Dhruv Zala" className="object-cover" />
               </div>
             </motion.div>
           </div>
