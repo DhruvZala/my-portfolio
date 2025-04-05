@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { FaArrowUp } from "react-icons/fa";
 
 interface HomeProps {
   setActiveTab: (tab: string) => void;
@@ -40,7 +41,11 @@ const Home = ({ setActiveTab }: HomeProps) => {
             >
               {/* Image Section */}
               <div className="w-full h-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                <img src="IMG_20231114_115455.jpg" alt="Dhruv Zala" className="object-cover" />
+                <img
+                  src="IMG_20231114_115455.jpg"
+                  alt="Dhruv Zala"
+                  className="object-cover"
+                />
               </div>
             </motion.div>
           </div>
@@ -80,9 +85,9 @@ const Home = ({ setActiveTab }: HomeProps) => {
               whileTap={{ scale: 0.95 }}
               href="#projects"
               onClick={() => setActiveTab("projects")}
-              className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 rounded-full text-white font-medium transition-all shadow-lg"
+              className="px-8 py-3 bg-gradient-to-r flex items-center justify-center gap-1 from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 rounded-full text-white font-medium transition-all shadow-lg"
             >
-              View My Work
+              View My Work <FaArrowUp />
             </motion.a>
           </motion.div>
         </motion.div>
@@ -115,18 +120,20 @@ const Home = ({ setActiveTab }: HomeProps) => {
           </p>
 
           <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
-            {["Javascript", "TypeScript", "React", "Redux"].map((tech, index) => (
-              <motion.div
-                key={tech}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.7 + index * 0.1 }}
-                whileHover={{ y: -5 }}
-                className="bg-gray-700/50 hover:bg-gray-700/70 rounded-lg p-3 text-center transition-all"
-              >
-                <span className="text-blue-300 font-medium">{tech}</span>
-              </motion.div>
-            ))}
+            {["Javascript", "TypeScript", "React", "Redux"].map(
+              (tech, index) => (
+                <motion.div
+                  key={tech}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.7 + index * 0.1 }}
+                  whileHover={{ y: -5 }}
+                  className="bg-gray-700/50 hover:bg-gray-700/70 rounded-lg p-3 text-center transition-all"
+                >
+                  <span className="text-blue-300 font-medium">{tech}</span>
+                </motion.div>
+              )
+            )}
           </div>
         </div>
       </motion.div>
