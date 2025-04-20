@@ -127,7 +127,7 @@ const Projects = () => {
       title: "Weather App",
       description: "Real-time weather application using OpenWeather API",
       tags: ["React", "Axios", "CSS"],
-      link: "https://weatherappdhruvzala.netlify.app/",
+      link: "https://rad-trifle-9c39b1.netlify.app/",
       image: "Screenshot 2025-03-30 182713.png",
     },
     {
