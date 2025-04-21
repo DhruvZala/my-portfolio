@@ -134,9 +134,9 @@ const Projects = () => {
       id: 3,
       title: "Task Manager",
       description: "Todo application with drag and drop functionality",
-      tags: ["React", "TypeScript"],
-      link: "https://to-do-app-dhruv.netlify.app/",
-      image: "Screenshot 2025-03-30 182849.png",
+      tags: ["React", "TypeScript", "Tailwind CSS"],
+      link: "https://imaginative-taffy-a0769d.netlify.app/",
+      image: "Screenshot 2025-04-21 152001.png",
     },
     {
       id: 4,
