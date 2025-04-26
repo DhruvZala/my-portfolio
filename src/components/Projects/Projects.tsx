@@ -117,10 +117,10 @@ const Projects = () => {
       id: 1,
       title: "E-commerce Website",
       description:
-        "A responsive admin dashboard built with React and TypeScript",
-      tags: ["React", "TypeScript", "Tailwind"],
-      link: "https://cartify-rho-six.vercel.app/",
-      image: "Screenshot 2025-03-31 130817.png",
+        "An E-commerce Website Using MERN Stack, Rest API, And Typescript",
+      tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Typescript", "Tailwind CSS"],
+      link: "https://cartify-frontend-mc7m.onrender.com/",
+      image: "Screenshot 2025-04-26 161910.png",
     },
     {
       id: 2,
