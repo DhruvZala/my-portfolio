@@ -118,8 +118,15 @@ const Projects = () => {
       title: "E-commerce Website",
       description:
         "An E-commerce Website Using MERN Stack, Rest API, And Typescript",
-      tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Typescript", "Tailwind CSS"],
-      link: "https://cartify-frontend-mc7m.onrender.com/",
+      tags: [
+        "MongoDB",
+        "Express.js",
+        "React.js",
+        "Node.js",
+        "Typescript",
+        "Tailwind CSS",
+      ],
+      link: "https://cartify-com-frontend.onrender.com/",
       image: "Screenshot 2025-04-26 161910.png",
     },
     {
