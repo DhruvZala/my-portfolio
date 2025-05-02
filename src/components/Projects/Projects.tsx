@@ -126,7 +126,7 @@ const Projects = () => {
         "Typescript",
         "Tailwind CSS",
       ],
-      link: "https://cartifyfrontend-6ha1azey1-dhruv-zalas-projects.vercel.app/",
+      link: "https://cartifyfrontend-pearl.vercel.app/",
       image: "Screenshot 2025-04-26 161910.png",
     },
     {
